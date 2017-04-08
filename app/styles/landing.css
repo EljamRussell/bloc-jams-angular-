@@ -38,11 +38,11 @@ body.landing {
      padding: 2rem;
      text-align: center;
      opacity: 1;
-     -webkit-transform: scaleX(6.5) translateY(3rem);
+     /*-webkit-transform: scaleX(6.5) translateY(3rem);
      -moz-transform: scaleX(6.5) translateY(3rem);
-     transform: scaleX(6.5) translateY(3rem);
+     transform: scaleX(6.5) translateY(3rem);*/
  }
- 
+
  .point .point-title {
      font-size: 1.25rem;
  }
