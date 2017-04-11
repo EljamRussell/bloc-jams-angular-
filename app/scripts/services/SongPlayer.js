@@ -1,7 +1,7 @@
 (function() {
   function SongPlayer(Fixtures) {
     var SongPlayer = {};
-  
+
   var currentAlbum = Fixtures.getAlbum();
 
   /**
@@ -77,7 +77,7 @@
       setSong(song);
       playSong(song);
 
-    } else if (currentSong === song) {
+    } else if (SongPlayer.currentSong === song) {
       if (currentBuzzObject.isPaused()) {
         playSong(song);
 
