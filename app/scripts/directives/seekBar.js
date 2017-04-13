@@ -8,6 +8,7 @@
       offsetXPercent = Math.min(1, offsetXPercent);
       return offsetXPercent;
     };
+    
     return {
       templateUrl: '/templates/directives/seek_bar.html',
       replace: true,
