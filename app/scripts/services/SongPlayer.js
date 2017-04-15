@@ -168,7 +168,7 @@
       if (currentBuzzObject) {
         currentBuzzObject.setVolume(volume);
       }
-      
+
     };
 
     return SongPlayer;

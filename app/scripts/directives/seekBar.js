@@ -14,20 +14,20 @@
       restrict: 'E',
       scope: {
          onChange: '&'
-     },
+      },
       link: function(scope, element, attributes) {
         scope.value = 0;
         scope.max = 100;
 
         var seekBar = $(element);
 
-        attributes.$observe('value', function(newValue) {
-       scope.value = newValue;
- });
+       attributes.$observe('value', function(newValue) {
+         scope.value = newValue;
+       });
 
- attributes.$observe('max', function(newValue) {
-     scope.max = newValue;
- });
+       attributes.$observe('max', function(newValue) {
+           scope.max = newValue;
+       });
 
         var percentString = function () {
           var value = scope.value;
@@ -59,16 +59,17 @@
             });
           });
 
-          var notifyOnChange = function(newValue) {
-               if (typeof scope.onChange === 'function') {
-                   scope.onChange({value: newValue});
-               }
-           };
           $document.bind('mouseup.thumb', function() {
             $document.unbind('mousemove.thumb');
             $document.unbind('mouseup.thumb');
           });
         };
+
+        var notifyOnChange = function(newValue) {
+             if (typeof scope.onChange === 'function') {
+                 scope.onChange({value: newValue});
+             }
+         };
       }
     };
   }
